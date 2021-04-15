@@ -1,40 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dd02f52c-ccf6-4aec-a886-ffb5d6425ae1" name="Default Changelist" comment="source">
-      <change afterPath="$PROJECT_DIR$/config/core/base/general.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/core/backend/resources/lang/en/auth.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/core/backend/resources/lang/en/permissions.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/core/backend/resources/lang/en/reminders.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/core/backend/resources/lang/en/users.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/core/backend/resources/lang/en/users/auth.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/core/backend/resources/lang/en/users/permissions.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/core/backend/resources/lang/en/users/reminders.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/core/backend/resources/lang/en/users/users.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/core/backend/src/Http/Controllers/Auth/ConfirmPasswordController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/core/backend/src/Http/Controllers/Auth/ForgotPasswordController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/core/backend/src/Http/Controllers/Auth/LoginController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/core/backend/src/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/core/backend/src/Http/Controllers/Auth/ResetPasswordController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/core/backend/src/Http/Controllers/Auth/VerificationController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/core/backend/src/Http/Controllers/UserController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/core/base/helpers/common.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/core/base/src/Facades/PageTitleFacade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/core/base/src/Supports/PageTitle.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/core/setting/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/core/setting/helpers/helpers.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/core/setting/src/Facades/SettingFacade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/core/setting/src/Supports/SettingStore.php" afterDir="false" />
+    <list default="true" id="dd02f52c-ccf6-4aec-a886-ffb5d6425ae1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/modules/core/backend/resources/lang/en/dashboard.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/core/backend/resources/views/auth/layouts/app.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/core/backend/resources/views/auth/login.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/core/backend/resources/views/auth/partials/footer.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/core/backend/resources/views/auth/partials/header.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/core/backend/resources/views/auth/partials/navbar.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/core/backend/resources/views/auth/partials/sidebar.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/core/backend/resources/views/auth/partials/widget.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/core/backend/resources/views/auth/register.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/core/backend/resources/views/auth/reset.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/core/backend/resources/views/dashboard/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/core/backend/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/modules/core/backend/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/core/backend/resources/lang/en/dashboard.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/core/backend/resources/lang/en/users/auth.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/core/backend/resources/lang/en/users/permissions.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/core/backend/resources/lang/en/users/reminders.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/core/backend/resources/lang/en/users/users.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/core/backend/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/core/backend/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/core/backend/resources/views/partials/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/core/backend/resources/views/partials/footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/core/backend/resources/views/partials/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/core/backend/resources/views/partials/header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/core/backend/resources/views/partials/navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/core/backend/resources/views/partials/navbar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/core/backend/resources/views/partials/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/core/backend/resources/views/partials/sidebar.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/core/backend/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/core/backend/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/core/backend/src/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/core/backend/src/Http/Controllers/Auth/LoginController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/core/backend/src/Http/Controllers/DashboardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/core/backend/src/Http/Controllers/DashboardController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/core/backend/src/Http/Controllers/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/core/backend/src/Http/Controllers/PostController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/core/backend/src/Http/Controllers/RoleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/core/backend/src/Http/Controllers/RoleController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/core/base/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/modules/core/base/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/core/base/src/Providers/BaseServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/core/base/src/Providers/BaseServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/core/backend/src/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/core/backend/src/Http/Controllers/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +42,11 @@
     </execution>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="product" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IgnoredFileRootStore">
@@ -184,10 +183,10 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\edu-cms\modules\core\backend\resources\lang\en" />
+      <recent name="C:\xampp\htdocs\edu-cms\modules\core\backend\resources\lang\en\dashboard" />
+      <recent name="C:\xampp\htdocs\edu-cms\modules\core\backend\resources\views\auth" />
+      <recent name="C:\xampp\htdocs\edu-cms\modules\core\backend\resources\views\auth\layouts" />
       <recent name="C:\xampp\htdocs\edu-cms\modules\core\setting" />
-      <recent name="C:\xampp\htdocs\edu-cms\modules\core\backend\resources\lang\users" />
-      <recent name="C:\xampp\htdocs\edu-cms\modules\core\backend\src\Http\Controllers" />
-      <recent name="C:\xampp\htdocs\edu-cms\public" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\edu-cms\modules\core\backend\resources\lang\en\users" />
@@ -216,7 +215,7 @@
       <workItem from="1618373597073" duration="9858000" />
       <workItem from="1618389366788" duration="2159000" />
       <workItem from="1618456937740" duration="6147000" />
-      <workItem from="1618467998114" duration="2502000" />
+      <workItem from="1618467998114" duration="10784000" />
     </task>
     <task id="LOCAL-00001" summary="source">
       <created>1618459705046</created>
@@ -232,7 +231,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618460694589</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="source">
+      <created>1618470553679</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1618470553679</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -243,14 +249,14 @@
     <option name="LAST_COMMIT_MESSAGE" value="source" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1618462615097">
+    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1618480236806">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1618462615097" />
-    <state x="585" y="114" key="CommitChangelistDialog2" timestamp="1618462136858">
+    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1618480236806" />
+    <state x="585" y="114" key="CommitChangelistDialog2" timestamp="1618470551631">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="585" y="114" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1618462136858" />
+    <state x="585" y="114" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1618470551631" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1618468435368">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -259,26 +265,30 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="670" y="334" key="NewPhpClassDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1618376134157" />
-    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1618470002206">
+    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1618481484333">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1618470002206" />
+    <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1618481484333" />
     <state x="785" y="231" key="RollbackChangesDialog" timestamp="1618459633607">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="785" y="231" key="RollbackChangesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1618459633607" />
-    <state x="552" y="241" key="Vcs.Push.Dialog.v2" timestamp="1618460695882">
+    <state x="552" y="241" key="Vcs.Push.Dialog.v2" timestamp="1618470555127">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="241" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1618460695882" />
+    <state x="552" y="241" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1618470555127" />
     <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1618467998462">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="656" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1618467998462" />
-    <state x="656" y="252" width="737" height="606" key="find.popup" timestamp="1618470413352">
+    <state x="656" y="252" width="737" height="606" key="find.popup" timestamp="1618481288237">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="656" y="252" width="737" height="606" key="find.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1618470413352" />
+    <state x="656" y="252" width="737" height="606" key="find.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1618481288237" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1618483642145">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1618483642145" />
     <state x="616" y="173" width="672" height="676" key="search.everywhere.popup" timestamp="1618397005539">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

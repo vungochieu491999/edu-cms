@@ -1,9 +1,21 @@
 <?php
 
-use Edumad\Backend\Http\Controllers\UserController;
+use Edumad\Backend\Http\Controllers\Auth\LoginController;
+use Edumad\Backend\Http\Controllers\Auth\RegisterController;
+use Edumad\Backend\Http\Controllers\DashboardController;
 
-Route::group(['namespace' => 'Edumad\Backend\Http\Controllers', 'middleware' => 'web'], function () {
+Route::group(['namespace' => 'Edumad\Backend\Http\Controllers\Auth','middleware' => 'web'], function () {
+    Route::get('/login',[LoginController::class,'showLoginForm'])->name('public.member.login');
+    Route::post('/login',[LoginController::class,'login']);
+
+    Route::get('/register',[RegisterController::class,'showRegistrationForm'])->name('public.member.register');
+    Route::post('/register',[RegisterController::class,'register']);
+
+    Route::get('/logout',[LoginController::class,'logout'])->name('public.member.logout');
+});
+
+Route::group(['namespace' => 'Edumad\Backend\Http\Controllers', 'middleware' => ['web','auth']], function () {
     Route::group(['prefix' => config('core.base.general.admin_dir')], function () {
-        Route::get('/dashboard',[UserController::class,'getIndex']);
+        Route::get('/dashboard',[DashboardController::class,'getIndex']);
     });
 });

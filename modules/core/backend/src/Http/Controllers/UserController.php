@@ -11,7 +11,6 @@ class UserController extends BaseController
 
     /**
      * Display all users
-     * @param UserTable $dataTable
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      *
      * @throws \Throwable
@@ -20,7 +19,7 @@ class UserController extends BaseController
     {
         page_title()->setTitle(trans('core/backend::users.users'));
 
-        return view('core/backend::layouts.app');
+        return view('core/backend::layouts.dashboard');
     }
 
     /**
