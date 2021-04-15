@@ -15,6 +15,9 @@
     "autoload": {
         "psr-4": {
             "Edumad\\Base\\": "src/"
-        }
+        },
+        "files": [
+            "helpers/common.php"
+        ]
     }
 }

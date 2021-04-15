@@ -14,8 +14,10 @@
     },
     "autoload": {
         "psr-4": {
-            "Edumad\\": "src/",
-            "Edumad\\Backend\\": "src/"
-        }
+            "Edumad\\Setting\\": "src/"
+        },
+        "files": [
+            "helpers/helpers.php"
+        ]
     }
 }

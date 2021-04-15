@@ -1,8 +1,8 @@
 <?php
 
-namespace Edumad\Http\Controllers;
+namespace Edumad\Backend\Http\Controllers;
 
-use Illuminate\Routing\Controller as BaseController;
+use App\Http\Controllers\Controller as BaseController;
 
 class RoleController extends BaseController
 {

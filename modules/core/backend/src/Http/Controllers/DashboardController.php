@@ -1,6 +1,6 @@
 <?php
-namespace Edumad\Http\Controllers;
-use Illuminate\Routing\Controller as BaseController;
+namespace Edumad\Backend\Http\Controllers;
+use App\Http\Controllers\Controller as BaseController;
 
 class DashboardController extends BaseController
 {
