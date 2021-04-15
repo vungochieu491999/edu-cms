@@ -1617,7 +1617,7 @@
     scrollbarAutoHide: 'l',
     panelAutoHeight: true,
     panelAutoHeightMode: 'min-height',
-    preloadDuration: 200,
+    preloadDuration: 100,
     loginRegisterAutoHeight: true
   };
   /**
@@ -1756,7 +1756,7 @@
           $preloader.css('height', 0);
           setTimeout(function () {
             $preloader.children().hide();
-          }, 200);
+          }, 100);
         }
       }, this._config.preloadDuration);
     };

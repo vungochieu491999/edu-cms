@@ -11,6 +11,6 @@ class BaseServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->loadRoutesFrom(base_path() . '/modules/core/backend/routes/web.php');
-        $this->loadViewsFrom(base_path() . '/modules/core/backend/resources/views', 'core/base');
+        $this->loadViewsFrom(base_path() . '/modules/core/backend/resources/views', 'core/backend');
     }
 }
