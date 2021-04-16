@@ -8,7 +8,7 @@
 <head>
     @include('core/backend::auth.partials.header')
 </head>
-<body class="hold-transition login-page">
+<body class="{{ body_class()->getBodyClass() }}">
 
 @yield('content')
 

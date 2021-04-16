@@ -15,13 +15,14 @@ class CreateUsersTable extends Migration
     {
         Schema::create('users', function (Blueprint $table) {
             $table->id();
-            $table->string('email')->unique();
-            $table->timestamp('email_verified_at')->nullable();
-            $table->text('permissions')->nullable();
-            $table->timestamp('last_login')->nullable();
             $table->string('first_name')->nullable();
             $table->string('last_name')->nullable();
             $table->string('username', 60)->unique()->nullable();
+            $table->string('email')->unique();
+            $table->timestamp('last_login')->nullable();
+            $table->text('permissions')->nullable();
+            $table->integer('avatar_id')->unsigned()->nullable();
+            $table->timestamp('email_verified_at')->nullable();
             $table->dateTime('dob')->nullable();
             $table->string('address', 255)->nullable();
             $table->string('secondary_address', 255)->nullable();
@@ -39,7 +40,6 @@ class CreateUsersTable extends Migration
             $table->string('github', 120)->nullable();
             $table->string('interest', 255)->nullable();
             $table->string('about', 400)->nullable();
-            $table->integer('avatar_id')->unsigned()->nullable();
             $table->boolean('super_user')->default(0);
             $table->boolean('manage_supers')->default(0);
             $table->boolean('completed_profile')->default(0);

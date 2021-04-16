@@ -41,6 +41,8 @@ class LoginController extends Controller
 
     public function showLoginForm()
     {
+        body_class()->setBodyClass(config('core.base.auth.body_login_class'));
+
         return view('core/backend::auth.login');
     }
 
