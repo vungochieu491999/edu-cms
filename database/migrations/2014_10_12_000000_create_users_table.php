@@ -43,7 +43,7 @@ class CreateUsersTable extends Migration
             $table->boolean('super_user')->default(0);
             $table->boolean('manage_supers')->default(0);
             $table->boolean('completed_profile')->default(0);
-            $table->string('password')->nullable()->change();
+            $table->string('password')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });
@@ -55,8 +55,8 @@ class CreateUsersTable extends Migration
             $table->text('permissions')->nullable();
             $table->string('description', 255)->nullable();
             $table->tinyInteger('is_default')->unsigned()->default(0);
-            $table->integer('created_by')->unsigned()->references('id')->on('users')->index();
-            $table->integer('updated_by')->unsigned()->references('id')->on('users')->index();
+            $table->integer('created_by')->unsigned()->references('id')->on('users')->default(0)->index();
+            $table->integer('updated_by')->unsigned()->references('id')->on('users')->default(0)->index();
             $table->timestamps();
         });
 
