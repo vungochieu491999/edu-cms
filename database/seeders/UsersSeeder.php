@@ -27,7 +27,7 @@ class UsersSeeder extends Seeder
         ]);
         $user1->roles()->attach($author);
 
-        $user2 = \App\Models\User::create([
+        $user2 = User::create([
             'first_name' => 'Phóng',
             'last_name' => 'viên 2',
             'username' => 'edumad_pv2',

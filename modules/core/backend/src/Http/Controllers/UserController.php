@@ -3,7 +3,6 @@
 namespace Edumad\Backend\Http\Controllers;
 
 use App\Http\Controllers\Controller as BaseController;
-use Illuminate\Http\Request;
 
 class UserController extends BaseController
 {
@@ -22,22 +21,21 @@ class UserController extends BaseController
         return view('core/backend::layouts.dashboard');
     }
 
-    /**
-     * @param string $lang
-     * @param Request $request
-     * @return \Illuminate\Http\RedirectResponse
-     * @throws Exception
-     */
-    public function getLanguage($lang, Request $request)
-    {
-        if ($lang != false && array_key_exists($lang, Assets::getAdminLocales())) {
-            if (Auth::check()) {
-                UserMeta::setMeta('admin-locale', $lang);
-                cache()->forget(md5('cache-dashboard-menu-' . $request->user()->getKey()));
-            }
-            session()->put('admin-locale', $lang);
-        }
-
-        return redirect()->back();
-    }
+//    /**
+//     * @param string $lang
+//     * @param Request $request
+//     * @return \Illuminate\Http\RedirectResponse
+//     */
+//    public function getLanguage($lang, Request $request)
+//    {
+//        if ($lang != false && array_key_exists($lang, Assets::getAdminLocales())) {
+//            if (Auth::check()) {
+//                UserMeta::setMeta('admin-locale', $lang);
+//                cache()->forget(md5('cache-dashboard-menu-' . $request->user()->getKey()));
+//            }
+//            session()->put('admin-locale', $lang);
+//        }
+//
+//        return redirect()->back();
+//    }
 }
