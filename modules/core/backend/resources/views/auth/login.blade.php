@@ -1,13 +1,14 @@
 @extends('core/backend::auth.layouts.app')
+
 @section('content')
     <div class="login-box">
         <!-- /.login-logo -->
         <div class="card card-outline card-primary">
             <div class="card-header text-center">
-                <a href="../../index2.html" class="h1"><b>Admin</b>LTE</a>
+                <a href="/" class="h1"><b>Edu</b>MAD</a>
             </div>
             <div class="card-body">
-                <p class="login-box-msg">Sign in to start your session</p>
+                <p class="login-box-msg">Login</p>
 
                 <form action="{{route('public.member.login')}}" method="post">
                     @csrf

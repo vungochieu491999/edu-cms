@@ -1,8 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dd02f52c-ccf6-4aec-a886-ffb5d6425ae1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+    <list default="true" id="dd02f52c-ccf6-4aec-a886-ffb5d6425ae1" name="Default Changelist" comment="migration user table">
+      <change afterPath="$PROJECT_DIR$/modules/packages/theme/resources/views/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/packages/theme/routes/public.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/packages/theme/src/Http/Controllers/PublicController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Policies/PostPolicy.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/core/base/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/core/base/auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/UsersSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/UsersSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/core/backend/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/modules/core/backend/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/core/backend/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/core/backend/resources/views/auth/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/core/backend/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/core/backend/resources/views/auth/register.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/core/backend/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/core/backend/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/core/backend/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/core/backend/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/core/backend/src/Http/Controllers/DashboardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/core/backend/src/Http/Controllers/DashboardController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/core/backend/src/Models/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/core/backend/src/Models/Post.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/core/backend/src/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/core/backend/src/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/core/backend/src/Policies/PostPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/core/backend/src/Policies/PostPolicy.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/packages/theme/src/Providers/ThemeServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/packages/theme/src/Providers/ThemeServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/themes/edu-max/widgets/custom-menu/custom-menu.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/themes/edu-max/widgets/custom-menu/registration.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/themes/edu-max/widgets/custom-menu/templates/backend.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/themes/edu-max/widgets/custom-menu/templates/frontend.blade.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +44,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="IgnoredFileRootStore">
     <option name="generatedRoots">
@@ -152,23 +175,23 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../botble-4-0" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\edu-cms\modules\core\backend\resources\lang\en\users" />
-      <recent name="C:\xampp\htdocs\edu-cms\public" />
-      <recent name="C:\xampp\htdocs\edu-cms\modules\core\backend" />
-      <recent name="C:\xampp\htdocs\edu-cms\modules\core\src" />
-      <recent name="C:\xampp\htdocs\edu-cms\modules\core\src\Http\Controllers" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\edu-cms\modules\packages\theme\resources" />
       <recent name="C:\xampp\htdocs\edu-cms\modules\core\backend\resources\views\layouts" />
       <recent name="C:\xampp\htdocs\edu-cms\config\core\base" />
       <recent name="C:\xampp\htdocs\edu-cms\modules\core\base\src\Supports" />
       <recent name="C:\xampp\htdocs\edu-cms\modules\core\base\src\Facades" />
-      <recent name="C:\xampp\htdocs\edu-cms\modules\core\backend\resources\lang\en" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\edu-cms\modules\packages\theme\src\Http" />
+      <recent name="C:\xampp\htdocs\edu-cms\modules\core\backend\resources\lang\en\users" />
+      <recent name="C:\xampp\htdocs\edu-cms\public" />
+      <recent name="C:\xampp\htdocs\edu-cms\modules\core\backend" />
+      <recent name="C:\xampp\htdocs\edu-cms\modules\core\src" />
     </key>
   </component>
   <component name="RunManager">
@@ -193,6 +216,10 @@
       <workItem from="1618467998114" duration="10882000" />
       <workItem from="1618540384590" duration="8063000" />
       <workItem from="1618558935888" duration="772000" />
+      <workItem from="1618571512999" duration="465000" />
+      <workItem from="1618800097680" duration="2192000" />
+      <workItem from="1618816154044" duration="1685000" />
+      <workItem from="1618819839300" duration="5163000" />
     </task>
     <task id="LOCAL-00001" summary="source">
       <created>1618459705046</created>
@@ -236,7 +263,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618559702844</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="migration user table">
+      <created>1618571639125</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1618571639125</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -247,29 +281,39 @@
     <MESSAGE value="login user" />
     <MESSAGE value="register user" />
     <MESSAGE value="Post Policy" />
-    <option name="LAST_COMMIT_MESSAGE" value="Post Policy" />
+    <MESSAGE value="migration user" />
+    <MESSAGE value="migration user table" />
+    <option name="LAST_COMMIT_MESSAGE" value="migration user table" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1618548175347">
+    <state x="730" y="323" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1618816008455">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1618548175347" />
-    <state x="585" y="114" key="CommitChangelistDialog2" timestamp="1618559700950">
+    <state x="730" y="323" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1618816008455" />
+    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1618824109923">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="585" y="114" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1618559700950" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1618468435368">
+    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1618824109923" />
+    <state x="585" y="114" key="CommitChangelistDialog2" timestamp="1618825022995">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1618468435368" />
-    <state x="670" y="334" key="NewPhpClassDialog" timestamp="1618376134157">
+    <state x="585" y="114" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1618825022995" />
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1618824169214">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="670" y="334" key="NewPhpClassDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1618376134157" />
-    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1618481484333">
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1618824169214" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1618824630554">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1618481484333" />
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1618824630554" />
+    <state x="670" y="334" key="NewPhpClassDialog" timestamp="1618815618883">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="670" y="334" key="NewPhpClassDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1618815618883" />
+    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1618815609205">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1618815609205" />
     <state x="785" y="231" key="RollbackChangesDialog" timestamp="1618459633607">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -278,18 +322,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="162" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1618559050351" />
-    <state x="552" y="241" key="Vcs.Push.Dialog.v2" timestamp="1618559705671">
+    <state x="552" y="241" key="Vcs.Push.Dialog.v2" timestamp="1618571640705">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="241" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1618559705671" />
-    <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1618467998462">
+    <state x="552" y="241" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1618571640705" />
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1618800127624">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="656" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1618467998462" />
-    <state x="656" y="252" width="737" height="606" key="find.popup" timestamp="1618548086013">
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1618800127624" />
+    <state x="769" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1618814650555">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="656" y="252" width="737" height="606" key="find.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1618548086013" />
+    <state x="769" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1618814650555" />
+    <state x="656" y="252" width="737" height="606" key="find.popup" timestamp="1618824609547">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="656" y="252" width="737" height="606" key="find.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1618824609547" />
+    <state x="701" y="162" key="refactoring.ChangeSignatureDialog" timestamp="1618822298436">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="701" y="162" key="refactoring.ChangeSignatureDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1618822298436" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1618483642145">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

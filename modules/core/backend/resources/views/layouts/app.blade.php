@@ -8,7 +8,7 @@
 <head>
     @include('core/backend::partials.header')
 </head>
-<body class="hold-transition sidebar-mini layout-fixed">
+<body class="{{ body_class()->getBodyClass() }}">
 <div class="wrapper">
 
     <!-- Preloader -->

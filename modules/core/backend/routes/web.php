@@ -19,3 +19,7 @@ Route::group(['namespace' => 'Edumad\Backend\Http\Controllers', 'middleware' => 
         Route::get('/dashboard',[DashboardController::class,'getIndex']);
     });
 });
+
+Route::group(['namespace' => 'Edumad\Backend\Http\Controllers', 'middleware' => ['web','auth']], function () {
+    Route::get('/dashboard',[DashboardController::class,'getIndex']);
+});

@@ -23,6 +23,10 @@ class UsersSeeder extends Seeder
             'last_name' => 'viên 1',
             'username' => 'edumad_pv1',
             'email' => 'pv1@allaravel.dev',
+            'permissions' => json_encode([
+                'post.update' => true,
+                'post.publish' => true,
+            ]),
             'password' => bcrypt('123456')
         ]);
         $user1->roles()->attach($author);
@@ -32,6 +36,10 @@ class UsersSeeder extends Seeder
             'last_name' => 'viên 2',
             'username' => 'edumad_pv2',
             'email' => 'pv2@allaravel.dev',
+            'permissions' => json_encode([
+                'post.update' => true,
+                'post.publish' => true,
+            ]),
             'password' => bcrypt('123456')
         ]);
         $user2->roles()->attach($author);
@@ -41,6 +49,10 @@ class UsersSeeder extends Seeder
             'last_name' => 'viên 1',
             'username' => 'edumad_btv1',
             'email' => 'btv1@allaravel.dev',
+            'permissions' => json_encode([
+                'post.update' => true,
+                'post.publish' => true,
+            ]),
             'password' => bcrypt('123456')
         ]);
         $user3->roles()->attach($editor);

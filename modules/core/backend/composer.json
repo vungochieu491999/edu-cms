@@ -15,7 +15,9 @@
     "autoload": {
         "psr-4": {
             "Edumad\\": "src/",
-            "Edumad\\Backend\\": "src/"
+            "Edumad\\Backend\\": "src/",
+            "Edumad\\Policies\\": "src/Policies/",
+            "Edumad\\Models\\": "src/Models/"
         }
     }
 }

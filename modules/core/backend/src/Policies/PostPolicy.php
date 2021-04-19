@@ -5,6 +5,7 @@ namespace Edumad\Policies;
 use Edumad\Models\Post;
 use Edumad\Models\User;
 use Illuminate\Auth\Access\HandlesAuthorization;
+use Illuminate\Support\Facades\Auth;
 
 class PostPolicy
 {
@@ -18,6 +19,7 @@ class PostPolicy
      */
     public function viewAny(User $user)
     {
+        return $user->hasAccess(['post.publish']);
         //
     }
 
@@ -77,6 +79,7 @@ class PostPolicy
      */
     public function restore(User $user, Post $post)
     {
+        $user = Auth::user();
         //
     }
 
@@ -90,5 +93,18 @@ class PostPolicy
     public function forceDelete(User $user, Post $post)
     {
         //
+    }
+
+    /**
+     * Determine whether the user can permanently publish the post.
+     *
+     * @param User $user
+     * @param Post $post
+     * @return mixed
+     */
+    public function publish(User $user)
+    {
+    dd(1);
+        return $user->hasAccess(['post.publish']);
     }
 }
