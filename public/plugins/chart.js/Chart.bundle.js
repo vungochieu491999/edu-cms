@@ -1532,7 +1532,7 @@ function getAlpha(string) {
 // generators
 function hexString(rgba, a) {
    var a = (a !== undefined && rgba.length === 3) ? a : rgba[3];
-   return "#" + hexDouble(rgba[0]) 
+   return "#" + hexDouble(rgba[0])
               + hexDouble(rgba[1])
               + hexDouble(rgba[2])
               + (
@@ -5125,7 +5125,7 @@ var controller_bar = core_datasetController.extend({
 		return {
 			base: center - size / 2,
 			head: center + size / 2,
-			center: center,
+			center: center  ,
 			size: size
 		};
 	},

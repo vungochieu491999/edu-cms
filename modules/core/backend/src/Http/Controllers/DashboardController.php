@@ -1,9 +1,7 @@
 <?php
 namespace Edumad\Backend\Http\Controllers;
 use App\Http\Controllers\Controller as BaseController;
-use Edumad\Models\User;
 use Illuminate\Auth\Access\HandlesAuthorization;
-use Illuminate\Support\Facades\Auth;
 
 class DashboardController extends BaseController
 {
@@ -17,6 +15,11 @@ class DashboardController extends BaseController
      */
     public function getIndex()
     {
+        $prefix = request()->route()->getPrefix();
+        if (!$prefix || $prefix === config('core.base.general.admin_dir')) {
+            $uri = explode('/', request()->route()->uri());
+            $prefix = end($uri);
+        }
         body_class()->setBodyClass(config('core.base.auth.body_dashboard_class'));
         page_title()->setTitle(trans('core/backend::dashboard.title'));
 
