@@ -17,14 +17,20 @@ class RolesSeeder extends Seeder
         $author = Role::create([
             'name' => 'Phóng viên',
             'slug' => 'author',
-            'permissions' => [],
+            'permissions' => json_encode([
+                'post.update' => true,
+                'post.publish' => true,
+            ]),
             'description' => 'Chức năng viết bài',
         ]);
 
         $editor = Role::create([
             'name' => 'Biên tập viên',
             'slug' => 'editor',
-            'permissions' => [],
+            'permissions' => json_encode([
+                'post.update' => true,
+                'post.publish' => true,
+            ]),
             'description' => 'Chức năng viết bài và xuất bản',
         ]);
     }

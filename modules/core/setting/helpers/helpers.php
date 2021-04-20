@@ -2,6 +2,7 @@
 
 use Edumad\Setting\Facades\SettingFacade;
 use Edumad\Setting\Supports\SettingStore;
+use Illuminate\Support\Facades\Auth;
 
 if(!function_exists('setting')){
     /**
@@ -9,7 +10,7 @@ if(!function_exists('setting')){
      *
      * @param $key
      * @param $default
-     * @return array|\Botble\Setting\Supports\SettingStore|string|null
+     * @return string
      */
     function setting($key = null, $default = null)
     {
@@ -23,5 +24,18 @@ if(!function_exists('setting')){
         }
 
         return SettingFacade::getFacadeRoot();
+    }
+}
+
+
+if(!function_exists('set_auth_model')){
+
+    function set_auth_model($model)
+    {
+        $closure = (function ($model) { $this->model = $model; });
+
+        $closure = $closure->bindTo(Auth::getProvider());
+
+        $closure($model);
     }
 }

@@ -16,10 +16,6 @@ Route::group(['namespace' => 'Edumad\Backend\Http\Controllers\Auth','middleware'
 
 Route::group(['namespace' => 'Edumad\Backend\Http\Controllers', 'middleware' => ['web','auth']], function () {
     Route::group(['prefix' => config('core.base.general.admin_dir')], function () {
-        Route::get('/dashboard',[DashboardController::class,'getIndex']);
+        Route::get('/dashboard',[DashboardController::class,'getIndex'])->name('admin.dashboard');
     });
-});
-
-Route::group(['namespace' => 'Edumad\Backend\Http\Controllers', 'middleware' => ['web','auth']], function () {
-    Route::get('/dashboard',[DashboardController::class,'getIndex']);
 });

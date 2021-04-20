@@ -2,35 +2,32 @@
 
 namespace Edumad\Policies;
 
-use Edumad\Models\Post;
 use Edumad\Models\User;
 use Illuminate\Auth\Access\HandlesAuthorization;
-use Illuminate\Support\Facades\Auth;
 
-class PostPolicy
+class UserPolicy
 {
     use HandlesAuthorization;
 
     /**
      * Determine whether the user can view any models.
      *
-     * @param User $user
+     * @param  \Edumad\Models\User  $user
      * @return mixed
      */
     public function viewAny(User $user)
     {
-        return $user->hasAccess(['post.publish']);
         //
     }
 
     /**
      * Determine whether the user can view the model.
      *
-     * @param User $user
-     * @param Post $post
+     * @param  \Edumad\Models\User  $user
+     * @param  \App\Models\User  $model
      * @return mixed
      */
-    public function view(User $user,$post)
+    public function view(User $user, User $model)
     {
         //
     }
@@ -38,7 +35,7 @@ class PostPolicy
     /**
      * Determine whether the user can create models.
      *
-     * @param User $user
+     * @param  \Edumad\Models\User  $user
      * @return mixed
      */
     public function create(User $user)
@@ -49,11 +46,11 @@ class PostPolicy
     /**
      * Determine whether the user can update the model.
      *
-     * @param User $user
-     * @param Post $post
+     * @param  \Edumad\Models\User  $user
+     * @param  \App\Models\User  $model
      * @return mixed
      */
-    public function update(User $user, Post $post)
+    public function update(User $user, User $model)
     {
         //
     }
@@ -61,11 +58,11 @@ class PostPolicy
     /**
      * Determine whether the user can delete the model.
      *
-     * @param User $user
-     * @param Post $post
+     * @param  \Edumad\Models\User  $user
+     * @param  \App\Models\User  $model
      * @return mixed
      */
-    public function delete(User $user, Post $post)
+    public function delete(User $user, User $model)
     {
         //
     }
@@ -73,38 +70,24 @@ class PostPolicy
     /**
      * Determine whether the user can restore the model.
      *
-     * @param User $user
-     * @param Post $post
+     * @param  \Edumad\Models\User  $user
+     * @param  \App\Models\User  $model
      * @return mixed
      */
-    public function restore(User $user, Post $post)
+    public function restore(User $user, User $model)
     {
-        $user = Auth::user();
         //
     }
 
     /**
      * Determine whether the user can permanently delete the model.
      *
-     * @param User $user
-     * @param Post $post
+     * @param  \Edumad\Models\User  $user
+     * @param  \App\Models\User  $model
      * @return mixed
      */
-    public function forceDelete(User $user, Post $post)
+    public function forceDelete(User $user, User $model)
     {
         //
-    }
-
-    /**
-     * Determine whether the user can permanently publish the post.
-     *
-     * @param User $user
-     * @param Post $post
-     * @return mixed
-     */
-    public function publish(User $user)
-    {
-    dd(1);
-        return $user->hasAccess(['post.publish']);
     }
 }

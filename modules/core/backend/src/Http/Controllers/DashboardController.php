@@ -2,9 +2,13 @@
 namespace Edumad\Backend\Http\Controllers;
 use App\Http\Controllers\Controller as BaseController;
 use Edumad\Models\User;
+use Illuminate\Auth\Access\HandlesAuthorization;
+use Illuminate\Support\Facades\Auth;
 
 class DashboardController extends BaseController
 {
+    use HandlesAuthorization;
+
     /**
      * Display all users
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
