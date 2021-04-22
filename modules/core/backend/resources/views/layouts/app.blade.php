@@ -15,6 +15,10 @@
             <img class="animation__wobble" src="{{asset('/dist/img/AdminLTELogo.png')}}" alt="AdminLTELogo" height="60" width="60">
         </div>
 
+        <div style="background-color: #0f6674; margin: 4px; padding: 2px; font-weight: bold; text-align: center;">
+            Access <a href="/" target="_blank">home page</a>
+        </div>
+
         <!-- Navbar -->
             @include('core/backend::partials.navbar')
         <!-- /.navbar -->

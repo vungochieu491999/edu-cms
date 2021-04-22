@@ -18,7 +18,7 @@ class UserController extends BaseController
     {
         page_title()->setTitle(trans('core/backend::users.users'));
 
-        return view('core/backend::layouts.dashboard');
+        return view('core/backend::users.profile.index');
     }
 
 //    /**

@@ -17,8 +17,8 @@ class PostsSeeder extends Seeder
      */
     public function run()
     {
-        $author1 = User::where('email', 'pv1@allaravel.dev')->first();
-        $author2 = User::where('email', 'pv2@allaravel.dev')->first();
+        $admin      = User::where('email', 'admin1@smartosc.com')->first();
+        $super_user = User::where('super_user', 1)->first();
         $faker = Factory::create();
         for ($i=0; $i < 10; $i++) {
             $title = $faker->sentence($nbWords = 6, $variableNbWords = true);
@@ -27,7 +27,7 @@ class PostsSeeder extends Seeder
                 'body' => $faker->text($maxNbChars = 1000),
                 'slug' => Str::slug($title),
                 'published' => rand(0,1),
-                'user_id' => $author1->id
+                'user_id' => $admin->id
             ]);
             $title = $faker->sentence($nbWords = 6, $variableNbWords = true);
             $post = Post::create([
@@ -35,7 +35,7 @@ class PostsSeeder extends Seeder
                 'body' => $faker->text($maxNbChars = 1000),
                 'slug' => Str::slug($title),
                 'published' => rand(0,1),
-                'user_id' => $author2->id
+                'user_id' => $super_user->id
             ]);
         }
     }

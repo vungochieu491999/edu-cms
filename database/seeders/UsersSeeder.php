@@ -15,46 +15,61 @@ class UsersSeeder extends Seeder
      */
     public function run()
     {
-        $author = Role::where('slug', 'author')->first();
-        $editor = Role::where('slug', 'editor')->first();
+        $memberRole   = Role::where('slug', 'member')->first();
+        $employeeRole = Role::where('slug', 'employee')->first();
+        $adminRole    = Role::where('slug', 'admin')->first();
 
-        $user1 = User::create([
-            'first_name' => 'Phóng',
-            'last_name' => 'viên 1',
-            'username' => 'edumad_pv1',
-            'email' => 'pv1@allaravel.dev',
+        $super_admin = User::create([
+            'first_name' => 'Vũ',
+            'last_name' => 'Ngọc Hiếu',
+            'username' => 'hieuvn8668',
+            'email' => 'hieuvn@smartosc.com',
             'permissions' => json_encode([
+                'dashboard.index' => true,
+                'post.update' => true,
+                'post.publish' => true,
+            ]),
+            'password' => bcrypt('123456'),
+            'super_user' => 1
+        ]);
+        $super_admin->roles()->attach($adminRole);
+
+        $member = User::create([
+            'first_name' => 'Tài Khoản',
+            'last_name' => 'Thành Viên',
+            'username' => 'member1',
+            'email' => 'member1@edumad.com',
+            'permissions' => json_encode([]),
+            'password' => bcrypt('123456')
+        ]);
+        $member->roles()->attach($memberRole);
+
+        $employee = User::create([
+            'first_name' => 'Trương',
+            'last_name' => 'Thảo Nhi',
+            'username' => 'employee1',
+            'email' => 'employee1@edumad.com',
+            'permissions' => json_encode([
+                'dashboard.index' => true,
                 'post.update' => true,
                 'post.publish' => true,
             ]),
             'password' => bcrypt('123456')
         ]);
-        $user1->roles()->attach($author);
+        $employee->roles()->attach($employeeRole);
 
-        $user2 = User::create([
-            'first_name' => 'Phóng',
-            'last_name' => 'viên 2',
-            'username' => 'edumad_pv2',
-            'email' => 'pv2@allaravel.dev',
+        $admin = User::create([
+            'first_name' => 'Nguyễn',
+            'last_name' => 'Thị Admin',
+            'username' => 'admin1',
+            'email' => 'admin1@smartosc.com',
             'permissions' => json_encode([
+                'dashboard.index' => true,
                 'post.update' => true,
                 'post.publish' => true,
             ]),
-            'password' => bcrypt('123456')
+            'password' => bcrypt('123456'),
         ]);
-        $user2->roles()->attach($author);
-
-        $user3 = User::create([
-            'first_name' => 'Biên tập',
-            'last_name' => 'viên 1',
-            'username' => 'edumad_btv1',
-            'email' => 'btv1@allaravel.dev',
-            'permissions' => json_encode([
-                'post.update' => true,
-                'post.publish' => true,
-            ]),
-            'password' => bcrypt('123456')
-        ]);
-        $user3->roles()->attach($editor);
+        $admin->roles()->attach($adminRole);
     }
 }

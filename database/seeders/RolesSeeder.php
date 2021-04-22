@@ -14,24 +14,31 @@ class RolesSeeder extends Seeder
      */
     public function run()
     {
-        $author = Role::create([
-            'name' => 'Phóng viên',
-            'slug' => 'author',
-            'permissions' => json_encode([
-                'post.update' => true,
-                'post.publish' => true,
-            ]),
-            'description' => 'Chức năng viết bài',
+        $member = Role::create([
+            'name' => 'Member',
+            'slug' => 'member',
+            'permissions' => json_encode([]),
+            'description' => 'Tài khoản khách',
         ]);
 
-        $editor = Role::create([
-            'name' => 'Biên tập viên',
-            'slug' => 'editor',
+        $employee = Role::create([
+            'name' => 'Employee',
+            'slug' => 'employee',
             'permissions' => json_encode([
+                'dashboard.index' => true,
+            ]),
+            'description' => 'Tài khoản nhân viên thường',
+        ]);
+
+        $admin = Role::create([
+            'name' => 'Admin',
+            'slug' => 'admin',
+            'permissions' => json_encode([
+                'dashboard.index' => true,
                 'post.update' => true,
                 'post.publish' => true,
             ]),
-            'description' => 'Chức năng viết bài và xuất bản',
+            'description' => 'Tài khoản admin',
         ]);
     }
 }
