@@ -1,34 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dd02f52c-ccf6-4aec-a886-ffb5d6425ae1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/__ide_helper.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/core/backend/resources/views/users/partials/add-model.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/core/backend/resources/views/users/profile/form.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/core/backend/resources/views/users/profile/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/core/base/src/Facades/DashboardMenuFacades.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/core/base/src/Supports/DashboardMenu.php" afterDir="false" />
+    <list default="true" id="dd02f52c-ccf6-4aec-a886-ffb5d6425ae1" name="Default Changelist" comment="sidebar dashboard">
+      <change afterPath="$PROJECT_DIR$/modules/core/backend/src/Requests/StoreUserRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/js/uploadFile.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/core/base/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/core/base/auth.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/PostsSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/PostsSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/RolesSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/RolesSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/UsersSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/UsersSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/core/base/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/core/base/class_name.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/core/backend/resources/lang/en/users.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/core/backend/resources/lang/en/users.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/core/backend/resources/views/dashboard/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/core/backend/resources/views/dashboard/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/core/backend/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/core/backend/resources/views/layouts/app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/core/backend/resources/views/partials/navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/core/backend/resources/views/partials/navbar.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/core/backend/resources/views/partials/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/core/backend/resources/views/partials/sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/core/backend/resources/views/users/partials/add-model.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/core/backend/resources/views/users/partials/add.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/core/backend/resources/views/users/profile/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/core/backend/resources/views/users/profile/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/core/backend/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/core/backend/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/core/backend/src/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/core/backend/src/Http/Controllers/Auth/LoginController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/core/backend/src/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/core/backend/src/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/core/backend/src/Http/Controllers/DashboardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/core/backend/src/Http/Controllers/DashboardController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/core/backend/src/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/core/backend/src/Http/Controllers/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/core/backend/src/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/core/backend/src/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/core/base/helpers/common.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/core/base/helpers/common.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/core/base/src/Providers/BaseServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/core/base/src/Providers/BaseServiceProvider.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/core/base/src/Traits/ImageTrait.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/core/base/src/Traits/ImageTrait.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/packages/theme/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/packages/theme/resources/views/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/packages/theme/resources/views/layouts/app_v2.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/packages/theme/resources/views/layouts/app_v3.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/packages/theme/routes/public.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/packages/theme/routes/public.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/.gitignore" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,23 +169,23 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../botble-4-0" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/dist/js" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\edu-cms\public\dist\js" />
+      <recent name="C:\xampp\htdocs\edu-cms\modules\core\backend\resources\views\user" />
+      <recent name="C:\xampp\htdocs\edu-cms\modules\core\base\src\Facades" />
+      <recent name="C:\xampp\htdocs\edu-cms\modules\core\base\src\Supports" />
+      <recent name="C:\xampp\htdocs\edu-cms\modules\packages\theme\resources" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\edu-cms\modules\core\backend\resources\views\users\profile" />
       <recent name="C:\xampp\htdocs\edu-cms\modules\core\backend\src\Policies" />
       <recent name="C:\xampp\htdocs\edu-cms\modules\packages\theme\src\Http" />
       <recent name="C:\xampp\htdocs\edu-cms\modules\core\backend\resources\lang\en\users" />
       <recent name="C:\xampp\htdocs\edu-cms\public" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\edu-cms\modules\core\backend\resources\views\user" />
-      <recent name="C:\xampp\htdocs\edu-cms\modules\core\base\src\Facades" />
-      <recent name="C:\xampp\htdocs\edu-cms\modules\core\base\src\Supports" />
-      <recent name="C:\xampp\htdocs\edu-cms\modules\packages\theme\resources" />
-      <recent name="C:\xampp\htdocs\edu-cms\modules\core\backend\resources\views\layouts" />
     </key>
   </component>
   <component name="RunManager">
@@ -228,6 +218,7 @@
       <workItem from="1619058675453" duration="8148000" />
       <workItem from="1619075787622" duration="59000" />
       <workItem from="1619080829161" duration="7724000" />
+      <workItem from="1619167849240" duration="3380000" />
     </task>
     <task id="LOCAL-00001" summary="source">
       <created>1618459705046</created>
@@ -344,10 +335,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1619090410510" />
-    <state x="670" y="334" key="NewPhpClassDialog" timestamp="1618908032472">
+    <state x="670" y="334" key="NewPhpClassDialog" timestamp="1619147637807">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="670" y="334" key="NewPhpClassDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1618908032472" />
+    <state x="670" y="334" key="NewPhpClassDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1619147637807" />
     <state x="794" y="443" key="NewPhpFileDialog" timestamp="1619085861097">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -376,10 +367,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="769" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1618891627449" />
-    <state x="758" y="258" width="737" height="606" key="find.popup" timestamp="1619089799734">
+    <state x="758" y="258" width="737" height="606" key="find.popup" timestamp="1619168233216">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="758" y="258" width="737" height="606" key="find.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1619089799734" />
+    <state x="758" y="258" width="737" height="606" key="find.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1619168233216" />
     <state x="701" y="162" key="refactoring.ChangeSignatureDialog" timestamp="1618822298436">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

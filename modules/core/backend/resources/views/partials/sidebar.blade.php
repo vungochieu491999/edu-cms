@@ -676,7 +676,7 @@
                     <img src="{{asset('dist/img/user2-160x160.jpg')}}" class="img-circle elevation-2" alt="User Image">
                 </div>
                 <div class="info">
-                    <a href="{{route('user.profile',['id'=>Auth::user()->id])}}" class="d-block">{{Auth::user()->getFullName()}}</a>
+                    <a href="{{route('users.profile',['id'=>Auth::user()->id])}}" class="d-block">{{Auth::user()->getFullName()}}</a>
                 </div>
             </div>
         @endif

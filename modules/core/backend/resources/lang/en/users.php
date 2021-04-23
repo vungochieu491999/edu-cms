@@ -36,6 +36,7 @@ return [
     'loading'                    => 'Loading',
     'close'                      => 'Close',
     'update'                     => 'Update',
+    'add'                        => 'Add',
     'read_image_failed'          => 'Failed to read the image file',
     'users'                      => 'Users',
     'update_avatar_success'      => 'Update profile image successfully!',

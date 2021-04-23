@@ -20,7 +20,7 @@ class DashboardController extends BaseController
             $uri = explode('/', request()->route()->uri());
             $prefix = end($uri);
         }
-        body_class()->setBodyClass(config('core.base.auth.body_dashboard_class'));
+        body_class()->setBodyClass(config('core.base.class_name.body_dashboard_class'));
         page_title()->setTitle(trans('core/backend::dashboard.title'));
 
         return view('core/backend::dashboard.index');

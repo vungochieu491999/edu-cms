@@ -48,7 +48,7 @@ class RegisterController extends Controller
      */
     public function showRegistrationForm()
     {
-        body_class()->setBodyClass(config('core.base.auth.body_register_class'));
+        body_class()->setBodyClass(config('core.base.class_name.body_register_class'));
 
         return view('core/backend::auth.register');
     }
