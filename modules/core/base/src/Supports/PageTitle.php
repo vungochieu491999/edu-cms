@@ -2,6 +2,8 @@
 
 namespace Edumad\Base\Supports;
 
+use Illuminate\Support\Facades\Log;
+
 class PageTitle
 {
     /**

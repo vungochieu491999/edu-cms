@@ -2,14 +2,14 @@
 
 namespace Edumad\Models;
 
-use Botble\Media\Models\MediaFile;
+use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 
 class User extends Authenticatable
 {
-    use HasFactory, Notifiable;
+    use HasFactory, Notifiable, SoftDeletes;
 
     /**
      * The attributes that are mass assignable.
@@ -19,7 +19,13 @@ class User extends Authenticatable
     protected $fillable = [
         'username',
         'email',
+        'first_name',
+        'last_name',
         'password',
+        'avatar_name',
+        'avatar_path',
+        'super_user',
+        'permissions',
     ];
 
     /**
@@ -67,14 +73,6 @@ class User extends Authenticatable
     public function getFullName()
     {
         return ucfirst($this->first_name) . ' ' . ucfirst($this->last_name);
-    }
-
-    /**
-     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
-     */
-    public function avatar()
-    {
-        return $this->belongsTo(MediaFile::class)->withDefault();
     }
 
     /**

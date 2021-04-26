@@ -29,12 +29,12 @@
                         <div class="card card-primary card-outline">
                             <div class="card-body box-profile">
                                 <div class="text-center">
-                                    <img class="profile-user-img img-fluid img-circle"
-                                         src="{{asset('dist/img/user4-128x128.jpg')}}"
+                                    <img class="profile-user-img img-fluid img-circle " style="width: 115px; height: 115px"
+                                         src="{{asset(isset($user->avatar_path) ? $user->avatar_path : get_default_avt()[array_rand(get_default_avt())])}}"
                                          alt="User profile picture">
                                 </div>
 
-                                <h3 class="profile-username text-center">Nina Mcintire</h3>
+                                <h3 class="profile-username text-center">{{$user->getFullName()}}</h3>
 
                                 <p class="text-muted text-center">Software Engineer</p>
 
@@ -50,7 +50,7 @@
                                     </li>
                                 </ul>
 
-                                <a href="#" class="btn btn-primary btn-block"><b>Follow</b></a>
+                                <a href="#" class="btn btn-primary btn-block"><b>Follows</b></a>
                             </div>
                             <!-- /.card-body -->
                         </div>

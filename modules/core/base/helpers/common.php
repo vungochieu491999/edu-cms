@@ -39,3 +39,14 @@ if (!function_exists('dashboard_menu')) {
         return DashboardMenuFacades::getFacadeRoot();
     }
 }
+
+
+if (!function_exists('get_default_avt')) {
+    /**
+     * @return DashboardMenu
+     */
+    function get_default_avt()
+    {
+        return ['dist/img/avatar.png','dist/img/avatar2.png','dist/img/avatar3.png','dist/img/avatar4.png','dist/img/avatar5.png'];
+    }
+}

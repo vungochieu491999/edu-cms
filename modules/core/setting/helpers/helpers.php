@@ -1,7 +1,6 @@
 <?php
 
 use Edumad\Setting\Facades\SettingFacade;
-use Edumad\Setting\Supports\SettingStore;
 use Illuminate\Support\Facades\Auth;
 
 if(!function_exists('setting')){
@@ -16,7 +15,7 @@ if(!function_exists('setting')){
     {
         if (!empty($key)) {
             try {
-                return SettingStore::get($key, $default);
+                return Setting::get($key, $default);
             } catch (Exception $exception) {
                 info($exception->getMessage());
                 return $default;

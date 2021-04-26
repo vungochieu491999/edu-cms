@@ -44,6 +44,7 @@ class CreateUsersTable extends Migration
             $table->boolean('manage_supers')->default(0);
             $table->boolean('completed_profile')->default(0);
             $table->string('password')->nullable();
+            $table->softDeletes();
             $table->rememberToken();
             $table->timestamps();
         });

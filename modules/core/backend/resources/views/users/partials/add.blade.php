@@ -21,21 +21,21 @@
 
         <!-- Main content -->
         <section class="content">
-            <form action="{{route('users.form.add')}}" method="POST" accept-charset="UTF-8">
+            <form action="{{route('users.form.add')}}" method="POST" accept-charset="UTF-8" enctype="multipart/form-data">
                 @csrf
                 <div class="user-profile row">
                     <div class="col-md-3 col-sm-5 crop-avatar">
                         <div class="card card-primary card-outline">
                             <div class="card-body box-profile">
                                 <div class="text-center">
-                                    <img id="output_img" class="profile-user-img img-fluid img-circle" style="width: 215px; height: 215px" src="{{asset('dist/img/avatar.png')}}" alt="User profile picture">
+                                    <img id="output_img" class="profile-user-img img-fluid img-circle" style="width: 215px; height: 215px" src="{{asset($link_file = get_default_avt()[array_rand(get_default_avt())])}}" alt="User profile picture">
                                 </div>
 
                                 <div class="form-group">
                                     <label>Choose avatar</label><span class="text-danger"> *</span>
                                     <div class="custom-file">
-                                        <input name="avatar" type="file" class="custom-file-input" id="input_img">
-                                        <label class="custom-file-label" for="input_img">Choose file</label>
+                                        <input name="avatar" type="file" class="custom-file-input" id="input_img" value="{{$link_file}}">
+                                        <label class="custom-file-label selected" for="input_img">{{__('Choose file')}}</label>
                                     </div>
                                 </div>
                             </div>

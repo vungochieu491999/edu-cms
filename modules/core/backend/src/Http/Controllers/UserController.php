@@ -3,9 +3,14 @@
 namespace Edumad\Backend\Http\Controllers;
 
 use App\Http\Controllers\Controller as BaseController;
-use Edumad\Requests\StoreUserRequest;
+use Edumad\Models\User;
+use Edumad\Requests\UserRequest;
 use Edumad\Traits\ImageTrait;
-use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\File;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Str;
 
 class UserController extends BaseController
 {
@@ -28,12 +33,14 @@ class UserController extends BaseController
         return view('core/backend::users.profile.index');
     }
 
-    public function getProfile()
+    public function getProfile($id)
     {
         page_title()->setTitle(trans('core/backend::users.users'));
         body_class()->setBodyClass(config('core.base.class_name.body_add_user_class'));
 
-        return view('core/backend::users.profile.index');
+        $user = User::find($id);
+
+        return view('core/backend::users.profile.index',compact('user'));
     }
 
     public function create()
@@ -44,18 +51,35 @@ class UserController extends BaseController
         return view('core/backend::users.partials.add');
     }
 
-    public function store(Request $request)
+    public function store(UserRequest $request)
     {
-    dump($request->all());
-        $dataUploadImg = $this->storageImageUpload($request, 'avatar', 'users');
-        dd($dataUploadImg);
-        if (!empty($dataUploadImg)) {
+        try {
+            DB::beginTransaction();
+
             $data = $request->all();
-            $data['slug'] = str_slug($request->name);
-            $data['img_name'] = $dataUploadImg['file_name'];
-            $data['img_path'] = $dataUploadImg['file_path'];
-            Product::create($data);
-            return redirect()->route('product.index')->with('success', 'Thêm sản phẩm thành công');
+            $password = !empty($data['password'])?$data['password']:env('DEFAULT_PASSWORD_USER','123456');
+            $roleId   = !empty($data['role_id'])?$data['role_id']:env('DEFAULT_ROLE_ID',1);
+
+            $dataUploadImg = $this->storageImageUpload($request, 'avatar', 'users');
+            if (!empty($dataUploadImg)) {
+                $data['avatar_name'] = $dataUploadImg['file_name'];
+                $data['avatar_path'] = $dataUploadImg['file_path'];
+            }
+            $data['first_name'] = $request['first_name'];
+            $data['last_name']  = $request['last_name'];
+            $data['email']      = $request['email'];
+            $data['password']   = Hash::make($password);
+            $user = User::create($data);
+            $user->roles()->attach($roleId);
+            DB::commit();
+            return redirect()->route('users.profile',$user->id)->with('success', 'Thêm sản phẩm thành công');
+        } catch (\Exception $e){
+            DB::rollBack();
+            $url_file = substr($data['avatar'], 1); // xoa dau / trong url
+            if (File::exists($url_file)) {
+                unlink($url_file);
+            }
+            Log::error('Message :' . $e->getMessage() . '--- Line: ' . $e->getLine());
         }
     }
 
@@ -67,32 +91,79 @@ class UserController extends BaseController
         return view('core/backend::users.partials.add');
     }
 
-    public function update(StoreUserRequest $request)
+    public function update(UserRequest $request)
     {
-        $dataUploadImg = $this->storageImageUpload($request, 'img', 'user');
-        if (!empty($dataUploadImg)) {
+        try {
+            DB::beginTransaction();
+
             $data = $request->all();
-            $data['slug'] = str_slug($request->name);
-            $data['img_name'] = $dataUploadImg['file_name'];
-            $data['img_path'] = $dataUploadImg['file_path'];
-            Product::create($data);
-            return redirect()->route('product.index')->with('success', 'Thêm sản phẩm thành công');
+            $password = !empty($data['password'])?$data['password']:env('DEFAULT_PASSWORD_USER','123456');
+            $roleId   = !empty($data['role_id'])?$data['role_id']:env('DEFAULT_ROLE_ID',1);
+
+            $dataUploadImg = $this->storageImageUpload($request, 'avatar', 'users');
+            if (!empty($dataUploadImg)) {
+                $data['avatar_name'] = $dataUploadImg['file_name'];
+                $data['avatar_path'] = $dataUploadImg['file_path'];
+            }
+            $data['first_name'] = $request['first_name'];
+            $data['last_name']  = $request['last_name'];
+            $data['email']      = $request['email'];
+            $data['password']   = Hash::make($password);
+            $user = User::create($data);
+            $user->roles()->attach($roleId);
+            DB::commit();
+            return redirect()->route('users.profile',$user->id)->with('success', 'Thêm sản phẩm thành công');
+        } catch (\Exception $e){
+            DB::rollBack();
+            $url_file = substr($data['avatar'], 1); // xoa dau / trong url
+            if (File::exists($url_file)) {
+                unlink($url_file);
+            }
+            Log::error('Message :' . $e->getMessage() . '--- Line: ' . $e->getLine());
         }
     }
 
-    public function delete()
+    public function delete($id)
     {
+        try{
+            DB::beginTransaction();
+            $user = User::find($id)->forceDelete();
+            DB::commit();
+            return redirect()->route('users.profile',$user->id)->with('success', 'Thêm sản phẩm thành công');
+        } catch (\Exception $e){
+            DB::rollBack();
+            Log::error('Message :' . $e->getMessage() . '--- Line: ' . $e->getLine());
+        }
+    }
+
+    public function trashView(){
         page_title()->setTitle(trans('core/backend::users.users'));
         body_class()->setBodyClass(config('core.base.class_name.body_add_user_class'));
 
-        return view('core/backend::users.partials.add');
+        return view('core/backend::users.partials.trash_view');
     }
 
-    public function trashView(){}
+    public function softDelete($id){
+        try{
+            DB::beginTransaction();
+            $user = User::find($id)->delete();
+            DB::commit();
+            return redirect()->route('users.profile',$user->id)->with('success', 'Thêm sản phẩm thành công');
+        } catch (\Exception $e){
+            DB::rollBack();
+            Log::error('Message :' . $e->getMessage() . '--- Line: ' . $e->getLine());
+        }
+    }
 
-    public function trashDelete(){}
-
-    public function trashRestore(){}
-
-    public function trashConfirmDelete(){}
+    public function trashRestore($id){
+        try{
+            DB::beginTransaction();
+            $user = User::find($id)->restore();
+            DB::commit();
+            return redirect()->route('users.profile',$user->id)->with('success', 'Thêm sản phẩm thành công');
+        } catch (\Exception $e){
+            DB::rollBack();
+            Log::error('Message :' . $e->getMessage() . '--- Line: ' . $e->getLine());
+        }
+    }
 }
