@@ -7,6 +7,6 @@ class PublicController extends BaseController
 {
     public function getIndex()
     {
-        return view('packages/public::index');
+        return view('packages/theme::index');
     }
 }

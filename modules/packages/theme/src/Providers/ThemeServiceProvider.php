@@ -14,8 +14,8 @@ class ThemeServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->loadRoutesFrom(base_path() . '/modules/packages/theme/routes/public.php');
-        $this->loadViewsFrom(base_path() . '/modules/packages/theme/resources/views', 'packages/public');
+        $this->loadViewsFrom(base_path() . '/modules/packages/theme/resources/views', 'packages/theme');
         $this->loadRoutesFrom(base_path() . '/modules/themes/edu-max/routes/web.php');
-        $this->loadViewsFrom(base_path() . '/modules/themes/edu-max/views', 'packages/theme');
+        $this->loadViewsFrom(base_path() . '/modules/themes/edu-max/views', 'theme');
     }
 }
