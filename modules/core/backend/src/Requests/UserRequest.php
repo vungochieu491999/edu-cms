@@ -23,29 +23,20 @@ class UserRequest extends FormRequest
     public function rules()
     {
         return [
-            'first_name' => 'required|min:2|max:255',
-            'email' => 'required|email',
+            'first_name' => 'required|min:2|max:191',
+            'last_name'  => 'required|min:2|max:191',
+            'password'   => 'min:6|max:191',
+            'password_confirmation'   => 'same:password',
+            'email'      => 'required|email|unique:users,email',
 //            'avatar' => 'required|image',
         ];
     }
-    public function messages()
-    {
-        return [
-            'required' => ':attribute không được bỏ trống',
-            'min' => ':attribute tối thiểu có 2 ký tự',
-            'max' => ':attribute tối đa có 255 ký tự',
-            'email' => ':attribute không đúng định dạng',
-            'unique' => ':attribute đã tồn tại',
-            'same' => ':attribute không khớp',
-            'image' => ':attribute phải là hình ảnh'
-        ];
-    }
+
     public function attributes()
     {
         return [
-            'first_name' => 'Tên thành viên',
-            'email' => 'Địa chỉ email',
-//            'avatar' => 'File upload'
+            'first_name' => trans('field_name.first_name'),
+            'last_name'  => trans('field_name.last_name'),
         ];
     }
 

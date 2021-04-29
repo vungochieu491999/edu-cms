@@ -58,7 +58,7 @@
                                     <div class="card-body">
                                         <div class="form-group">
                                             <label for="first-name">First Name <span class="text-danger"> *</span></label>
-                                            <input type="text" id="first-name" class="form-control @error('first_name') is-invalid @enderror" name="first_name" value="{{ old('first_name') }}" required>
+                                            <input type="text" id="first-name" class="form-control @error('first_name') is-invalid @enderror" name="first_name" value="{{ old('first_name') }}">
                                             @error('first_name')
                                             <span class="invalid-feedback" role="alert">
                                             <strong>{{ $message }}</strong>
@@ -67,7 +67,7 @@
                                         </div>
                                         <div class="form-group">
                                             <label for="last-name">Last Name <span class="text-danger"> *</span></label>
-                                            <input type="text" id="last-name" class="form-control @error('last_name') is-invalid @enderror" name="last_name" value="{{ old('last_name') }}" required>
+                                            <input type="text" id="last-name" class="form-control @error('last_name') is-invalid @enderror" name="last_name" value="{{ old('last_name') }}">
                                             @error('last_name')
                                             <span class="invalid-feedback" role="alert">
                                             <strong>{{ $message }}</strong>
@@ -76,7 +76,7 @@
                                         </div>
                                         <div class="form-group">
                                             <label for="email">Email <span class="text-danger"> *</span></label>
-                                            <input type="text" id="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required>
+                                            <input type="text" id="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}">
                                             @error('email')
                                             <span class="invalid-feedback" role="alert">
                                             <strong>{{ $message }}</strong>
