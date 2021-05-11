@@ -2,26 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd02f52c-ccf6-4aec-a886-ffb5d6425ae1" name="Default Changelist" comment="upload image avatar user">
-      <change afterPath="$PROJECT_DIR$/modules/core/backend/resources/lang/vi/auth.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/core/backend/resources/lang/vi/dashboard.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/core/backend/resources/lang/vi/permissions.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/core/backend/resources/lang/vi/reminders.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/core/backend/resources/lang/vi/users.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/modules/core/backend/src/Http/Controllers/MenuController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/core/base/src/Supports/Helper.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/__ide_helper.php" beforeDir="false" afterPath="$PROJECT_DIR$/__ide_helper.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/core/base/class_name.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/core/base/class_name.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/core/backend/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/core/backend/resources/views/auth/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/core/backend/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/core/backend/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/core/backend/src/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/core/backend/src/Http/Controllers/Auth/LoginController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/core/backend/src/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/core/backend/src/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/core/base/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/modules/core/base/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/core/base/src/Http/Responses/BaseHttpResponse.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/core/base/src/Http/Responses/BaseHttpResponse.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/core/base/src/Providers/BaseServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/core/base/src/Providers/BaseServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/themes/edu-max/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/themes/edu-max/views/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/public/.htaccess" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +19,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="product" />
+        <entry key="$PROJECT_DIR$" value="developer" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -246,7 +228,7 @@
       <workItem from="1620641366027" duration="3000" />
       <workItem from="1620700546607" duration="5252000" />
       <workItem from="1620707286492" duration="1005000" />
-      <workItem from="1620708316174" duration="264000" />
+      <workItem from="1620708316174" duration="706000" />
     </task>
     <task id="LOCAL-00001" summary="source">
       <created>1618459705046</created>
@@ -346,7 +328,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619608636017</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="route middleware guest">
+      <created>1620708682831</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1620708682831</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -363,7 +352,8 @@
     <MESSAGE value="change default namespace model provider" />
     <MESSAGE value="upload image avatar user" />
     <MESSAGE value="migration table" />
-    <option name="LAST_COMMIT_MESSAGE" value="migration table" />
+    <MESSAGE value="route middleware guest" />
+    <option name="LAST_COMMIT_MESSAGE" value="route middleware guest" />
   </component>
   <component name="WindowStateProjectService">
     <state x="730" y="323" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1618816008455">
@@ -374,10 +364,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1620630617751" />
-    <state x="393" y="119" key="CommitChangelistDialog2" timestamp="1620708588121">
+    <state x="393" y="119" key="CommitChangelistDialog2" timestamp="1620708680875">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="393" y="119" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1620708588121" />
+    <state x="393" y="119" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1620708680875" />
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1619064641114">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -402,10 +392,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="162" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1618559050351" />
-    <state x="552" y="241" key="Vcs.Push.Dialog.v2" timestamp="1619693839067">
+    <state x="552" y="241" key="Vcs.Push.Dialog.v2" timestamp="1620708684398">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="241" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1619693839067" />
+    <state x="552" y="241" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1620708684398" />
     <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1619064641114">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Base\Http\Responses;
+namespace Edumad\Base\Http\Responses;
 
 use Illuminate\Contracts\Support\Responsable;
 use Illuminate\Http\JsonResponse;
