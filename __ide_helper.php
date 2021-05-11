@@ -529,4 +529,6 @@ namespace {
     class Auth extends \Illuminate\Support\Facades\Auth {}
 
     class Setting extends \Edumad\Setting\Facades\SettingFacades {}
+
+    class File extends \Illuminate\Support\Facades\File {}
 }

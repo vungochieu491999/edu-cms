@@ -16,9 +16,6 @@
         "psr-4": {
             "Edumad\\Base\\": "src/",
             "Edumad\\Traits\\": "src/Traits/"
-        },
-        "files": [
-            "helpers/common.php"
-        ]
+        }
     }
 }

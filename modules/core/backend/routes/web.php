@@ -18,7 +18,7 @@ Route::group(['prefix' => config('core.base.general.admin_dir'), 'middleware' =>
     });
 
 
-    Route::group([['namespace' => 'Edumad\Backend\Http\Controllers'],'middleware' => 'auth'], function () {
+    Route::group([['namespace' => 'Edumad\Backend\Http\Controllers'],'middleware' => ['auth','guest']], function () {
         Route::get('/dashboard',[DashboardController::class,'getIndex'])->name('dashboard.index');
 
         Route::get('/users/view',[UserController::class,'getIndex'])->name('users.view');
